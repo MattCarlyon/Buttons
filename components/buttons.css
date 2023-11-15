@@ -1,30 +1,24 @@
 /* Basic Button Styles */
 .index-btn {
   display: inline-block;
-  padding: 10px 20px;
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the same height to make it a circle */
+  line-height: 200px; /* Center the text vertically */
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  -webkit-transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
-  transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
-}
-
-/* Default State */
-.index-btn {
-  background-color: #ffcd00; /* Default background color */
+  -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  background-color: #3498db; /* Blue background color */
   color: #ffffff; /* Default text color */
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Default box shadow */
+  border: 10px solid #ffcd00; /* Yellow border color */
 }
 
 /* Hover State */
 .index-btn:hover {
-  background-color: #ffcd00; /* Light background color on hover */
+  background-color: #ffcd00; /* Yellow background color on hover */
   color: #ffffff; /* Text color on hover */
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow on hover */
+  border: 10px solid #3498db; /* Change border color on hover to blue */
 }
 
 /* Additional Hover Effects (You can customize these as needed) */
@@ -36,8 +30,5 @@
 
 /* Active State (when the button is pressed) */
 .index-btn:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95); /* Scale down when pressed */
-  -webkit-box-shadow: none;
-          box-shadow: none; /* Remove box shadow when pressed */
+  border: 10px solid #ffcd00; /* Change border color when pressed to yellow */
 }
