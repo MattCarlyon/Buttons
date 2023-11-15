@@ -1,0 +1,43 @@
+/* Basic Button Styles */
+.index-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+/* Default State */
+.index-btn {
+  background-color: #ffcd00; /* Default background color */
+  color: #ffffff; /* Default text color */
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Default box shadow */
+}
+
+/* Hover State */
+.index-btn:hover {
+  background-color: #ffcd00; /* Light background color on hover */
+  color: #ffffff; /* Text color on hover */
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow on hover */
+}
+
+/* Additional Hover Effects (You can customize these as needed) */
+.index-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); /* Scale up on hover */
+  opacity: 0.9; /* Reduce opacity on hover */
+}
+
+/* Active State (when the button is pressed) */
+.index-btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95); /* Scale down when pressed */
+  -webkit-box-shadow: none;
+          box-shadow: none; /* Remove box shadow when pressed */
+}
