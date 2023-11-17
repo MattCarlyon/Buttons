@@ -1,0 +1,14 @@
+.sound-btn {
+    display: inline-block;
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the same height to make it a circle */
+    line-height: 200px; /* Center the text vertically */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    background-color: #3498db; /* Blue background color */
+    color: #ffffff; /* Default text color */
+    border: 10px solid #ffcd00; /* Yellow border color */
+    margin: 10px; /* Add 10px margin between buttons */
+  }
