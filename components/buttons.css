@@ -13,6 +13,7 @@
   color: #ffffff; /* Default text color */
   border: 10px solid #ffcd00; /* Yellow border color */
   margin: 10px; /* Add 10px margin between buttons */
+  cursor: pointer;
 }
 
 /* Hover State */
