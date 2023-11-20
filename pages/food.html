@@ -6,7 +6,10 @@
     <title>Food</title>
     <link rel="stylesheet" href="../styles/body.css">
     <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/pages.css">
     <link rel="stylesheet" href="../components/buttons.css">
+    <link rel="stylesheet" href="../components/pictures.css">
+    <link rel="stylesheet" href="../components/sound-btn.css">
 </head>
 <body>
 
@@ -15,13 +18,35 @@
     </header>
 
     <main>
-        <div>
-            <button class="index-btn" href="pages/animals.html"></button>
-            <button class="index-btn" href="pages/family.html"></button>
-            <button class="index-btn" href="pages/food.html"></button>
-            <button class="index-btn" href="pages/objects.html"></button>
-        </div>
+        <div class="group1">
+            <div class="picture-container">
+              <div class="pictures" img=""></div>
+            </div>
+            <div class="sound-container">
+              <button class="sound-btn" img=""></button>
+              <button class="sound-btn" img=""></button>
+            </div>
+        </div>      
+        <div class="group1">
+            <div class="picture-container">
+                <div class="pictures" img=""></div>
+            </div>
+            <div class="sound-container">
+              <button class="sound-btn" img=""></button>
+              <button class="sound-btn" img=""></button>
+            </div>
+        </div>    
+        <div class="group1">
+            <div class="picture-container">
+                <div class="pictures" img=""></div>
+            </div>
+            <div class="sound-container">
+              <button class="sound-btn" img=""></button>
+              <button class="sound-btn" img=""></button>
+            </div>
+        </div>        
     </main>
-
+    <audio id="clickSound" src="../sounds/click.mp3"></audio>
+    <script src="../components/sound-btn.js"></script>
 </body>
 </html>
