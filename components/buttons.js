@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var soundButtons = document.querySelectorAll('.index-btn');
+    var audio = document.getElementById('clickSound');
     
     soundButtons.forEach(function(button) {
         button.addEventListener('click', function() {
@@ -8,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function playSound() {
-        var audio = new Audio(sounds/click.mp3); // Adjust the path as needed
         audio.play();
     }
 });
