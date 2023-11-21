@@ -13,6 +13,9 @@
   border: 10px solid #ffcd00; /* Yellow border color */
   margin: 10px; /* Add 10px margin between buttons */
   cursor: pointer;
+  /* Set the background size and position */
+  background-size: cover; /* Optional: Adjust background size */
+  background-position: center; /* Optional: Adjust background position */
 }
 
 /* Hover State */

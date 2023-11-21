@@ -12,22 +12,26 @@
     border: 10px solid #ffcd00; /* Yellow border color */
     margin: 10px; /* Add 10px margin between buttons */
     cursor: pointer;
-  }
 
-  /* Hover State */
-  .sound-btn:hover {
+    /* Set the background size and position */
+    background-size: cover; /* Optional: Adjust background size */
+    background-position: center; /* Optional: Adjust background position */
+}
+
+/* Hover State */
+.sound-btn:hover {
     background-color: #ffcd00; /* Yellow background color on hover */
     color: #ffffff; /* Text color on hover */
     border: 10px solid #3498db; /* Change border color on hover to blue */
-  }
-  
-  /* Additional Hover Effects (You can customize these as needed) */
-  .sound-btn:hover {
+}
+
+/* Additional Hover Effects (You can customize these as needed) */
+.sound-btn:hover {
     transform: scale(1.05); /* Scale up on hover */
     opacity: 0.9; /* Reduce opacity on hover */
-  }
-  
-  /* Active State (when the button is pressed) */
-  .sound-btn:active {
+}
+
+/* Active State (when the button is pressed) */
+.sound-btn:active {
     border: 10px solid #ffcd00; /* Change border color when pressed to yellow */
-  }
+}
