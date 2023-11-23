@@ -4,16 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buttons.forEach(function (button) {
         button.addEventListener("click", function () {
-            var soundId = button.getAttribute("data-sound-id");
-            var animalSound = document.getElementById(soundId);
-
-            if (animalSound) {
-                clickSound.pause(); // Pause any currently playing sound
-                clickSound.currentTime = 0; // Reset the audio to the beginning
-                clickSound.src = animalSound.src;
-                clickSound.play();
-            }
+            playAnimalSound(button);
         });
     });
+
+    function playAnimalSound(button) {
+        var soundId = button.getAttribute("data-sound-id");
+        var animalSound = document.getElementById(soundId + "Sound");
+
+        if (animalSound) {
+            clickSound.pause();
+            clickSound.currentTime = 0;
+            clickSound.src = animalSound.src;
+            clickSound.play();
+        }
+    }
 });
+
+
 
