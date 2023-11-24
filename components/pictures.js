@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buttons.forEach(function (button) {
         button.addEventListener("click", function () {
-            playAnimalSound(button);
+            playPictureSound(button);
         });
     });
 
-    function playAnimalSound(button) {
+    function playPictureSound(button) {
         var soundId = button.getAttribute("data-sound-id");
         var animalSound = document.getElementById(soundId + "Sound");
 
