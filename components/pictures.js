@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function playPictureSound(button) {
         var soundId = button.getAttribute("data-sound-id");
-        var animalSound = document.getElementById(soundId + "Sound");
+        var pictureSound = document.getElementById(soundId + "Sound");
 
-        if (animalSound) {
+        if (pictureSound) {
             clickSound.pause();
             clickSound.currentTime = 0;
-            clickSound.src = animalSound.src;
+            clickSound.src = pictureSound.src;
             clickSound.play();
         }
     }
