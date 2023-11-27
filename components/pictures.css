@@ -1,34 +1,37 @@
 .pictures {
   display: inline-block;
-  width: 400px; /* Set the desired width */
-  height: 400px; /* Set the same height to make it a circle */
-  line-height: 200px; /* Center the text vertically */
+  width: 400px;
+  height: 400px;
+  line-height: 200px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
-  background-color: #3498db; /* Blue background color */
-  color: #ffffff; /* Default text color */
-  border: 10px solid #ffcd00; /* Yellow border color */
-  margin: 10px; /* Add 10px margin between buttons */
+  background-color: #3498db;
+  color: #ffffff;
+  border: 10px solid #ffcd00;
+  margin: 10px;
+  /* Set the background image size to cover and center it */
+  background-size: cover;
+  background-position: center center;
 }
 
 /* Hover State */
 .pictures:hover {
-  background-color: #ffcd00; /* Yellow background color on hover */
-  color: #ffffff; /* Text color on hover */
-  border: 10px solid #3498db; /* Change border color on hover to blue */
+  background-color: #ffcd00;
+  color: #ffffff;
+  border: 10px solid #3498db;
 }
 
-/* Additional Hover Effects (You can customize these as needed) */
+/* Additional Hover Effects */
 .pictures:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05); /* Scale up on hover */
-  opacity: 0.9; /* Reduce opacity on hover */
+          transform: scale(1.05);
+  opacity: 0.9;
 }
 
-/* Active State (when the button is pressed) */
+/* Active State */
 .pictures:active {
-  border: 10px solid #ffcd00; /* Change border color when pressed to yellow */
+  border: 10px solid #ffcd00;
 }
