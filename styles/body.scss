@@ -12,6 +12,14 @@ header {
     text-align: center;
 }
 
+header h1 {
+    display: inline-block;
+}
+
+header div {
+    text-align: left;
+}
+
 main {
     padding: 20px;
     text-align: center;

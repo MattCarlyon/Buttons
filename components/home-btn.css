@@ -1,0 +1,41 @@
+/* Basic Button Styles */
+.home-btn {
+  position: fixed; /* Use fixed position to keep it in the same place even when scrolling */
+  top: 10px; /* Adjust the top distance as needed */
+  right: 10px; /* Adjust the right distance as needed */
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  background-color: #3498db;
+  color: #ffffff;
+  border: 10px solid #ffcd00;
+  cursor: pointer;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hover State */
+.home-btn:hover {
+  background-color: #ffcd00;
+  color: #ffffff;
+  border: 10px solid #3498db;
+}
+
+/* Additional Hover Effects (You can customize these as needed) */
+.home-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Active State (when the button is pressed) */
+.home-btn:active {
+  border: 10px solid #ffcd00;
+}
