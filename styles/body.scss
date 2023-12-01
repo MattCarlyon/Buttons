@@ -25,6 +25,15 @@ main {
     text-align: center;
 }
 
+
+.footer {
+    background-color: #006aa7;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 300px; /* This pushes the footer to the bottom */
+  }
+
 @media (max-width: 600px) {
     /* Styles for small screens (phones) */
     main {
